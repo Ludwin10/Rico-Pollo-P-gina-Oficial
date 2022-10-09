@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rico pollo-Pagina oficial - FourTeam</title>
+        
+        <script src="https://kit.fontawesome.com/c7372040a3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+
+        <header>
+
+            <div class="container__header">
+
+                <div class="logo">
+                    <img src="media/Rico Pollo 2.png" alt="">
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Comida</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Compañia</a></li>
+                            <li><a href="#">Contactos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <i class="fa-solid fa-bars" id="icon_menu"></i>
+                <div class="header__register">
+                    <input type="button" class="btn__header-register" value="Registrarse">
+                </div>
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="cover">
+                
+                <div class="text__information-cover">
+                    <h1>¿Hambriento y no sabes que comer?</h1>
+
+                    <p>Rico pollo ofrece una delicada seleccion de comida a tu gusto, puedes escoger entre nuestra variedad de comida
+                        como son: Ricos desayunos, Ricos almuerzos e incluso Ricas cenas, puedes ver nuestros menus y elegir
+                        la comida de tu agrado, Cuando decidas lo que quieres comer ordenala y te sera llevada por nuestro servicio.</p>
+
+                    <div class="buttons__cover">
+                        <input type="button" class="btn__register-cover" value="Registrarse">
+                        <input type="button" class="btn__readMore-cover" value="Leer mas">
+                    </div>
+                </div>
+
+                <div class="media__cover">
+                    <video src="media/animacion2_cover.webm" autoplay playinline loop muted
+                    preload="auto"></video>
+                </div>
+
+
+            </div>
+
+            <div class="container__banner">
+
+                <div class="banner">
+                    <div class="banner__icon-location">
+                        <img src="media/notes.png" id="icon_location" alt="">
+                    </div>
+                    <div clas="banner__icon-notes">
+                        <img src="media/shop-button.png" id="icon_notes" alt="">
+                    </div>
+                    <div class="banner__text">
+                        <h2>Rico pollo cuenta con servicio Livery para que usted pueda hacer
+                            sus pedidos de forma rapida y sencilla.</h2>
+                            <a href="#">Leer mas</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
+
+<css>
+@import url('https://fonts.googleapis.com/css2? familia= Roboto:ital,peso@0,100;0,300;0,400;0,500;0,700;1,300 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    height: 100px;
+}
+
+.container__header{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 180px;
+}
+
+.menu nav ul{
+    display: flex;
+}
+
+.menu nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.menu nav ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    transition: opacity 300ms;
+}
+
+.menu nav ul li a:hover{
+    opacity: 0.6;
+}
+
+.btn__header-register,
+.btn__register-cover{
+    padding: 14px 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 500px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background, color, 300ms;
+}
+
+.btn__header-register:hover,
+.btn__register-cover:hover{
+    background-color: salmon;
+    color: black;
+}
+
+#icon_menu{
+    display: none;
+}
+
+/*PORTADA - COVER*/
+
+
+main{
+    max-width: 1200px;
+    height: calc(100vh + 800px);
+    padding: 40px;
+    margin: auto;
+}
+
+.cover{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.text__information-cover{
+    width: 50%
+}
+
+.text__information-cover h1{
+    font-size: 50px;
+}
+
+.text__information-cover p{
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.buttons__cover{
+    display: flex;
+    margin-top: 40px;
+}
+
+.btn__readMore-cover{
+    padding: 14px 40px;
+    border: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 300ms;
+}
+
+.btn__readMore-cover:hover{
+    background: silver;
+}
+
+.media__cover{
+    width: 50%;
+}
+
+.media__cover video{
+    width: 100%;
+    margin-top: -40px;
+}
+
+/*BANNER*/
+
+.container__banner{
+    margin-top: 80px;
+}
+
+.banner{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background-color: #121214;
+    position: relative;
+}
+
+.banner__icon-location{
+    width: 35%;
+    height: 100%;
+}
+
+#icon_location{
+    width: 400px;
+    margin-top: -10px;
+    position: relative;
+    filter: drop-shadow(-40px 0px 30px rgba(0, 0, 1, 3.5));
+}
+
+.banner__text{
+    width: 60%;
+    position: relative;
+    padding: 40px;
+}
+
+.banner__text h2{
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.banner__text a{
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 300ms;
+}
+
+.banner__text a:hover{
+    color: salmon;
+}
+
+.banner__icon-notes{
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    overflow: hidden;
+}
+
+#icon_notes{
+    width: 250px;
+    position: relative;
+    margin-top: -30px;
+    opacity: 1.0;
+}
+
+@media (max-width: 1024px){
+    .container__header,
+    main{
+        padding: 20px;
+    }
+
+    #icon_menu{
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .header__register{
+        display: none;
+    }
+
+    .menu{
+        height: 0px;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        overflow: hidden;
+        z-index: 10;
+        box-shadow: 0px 0px 30px -20px rgba(0,0,1,3.5);
+        transform: all 300ms;
+    }
+
+    .menu nav ul{
+        padding: 20px 0px;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .menu nav ul li{
+        padding: 10px 40px;
+    }
+
+    .mostrar_menu{ /*CLASE MANIPULADA POR JS*/
+        height: 235px;
+    }
+
+    .text__information-cover h1{
+        font-size: 40px;
+    }
+
+    .text__information-cover p{
+        font-size: 16px;
+    }
+
+    .banner__text h2{
+        font-size: 22px;
+    }
+
+    #icon_location{
+        left: -50px;
+    }
+
+    .banner__icon-notes{
+        right: -20px;
+    }
+
+    @media (max-width: 920px){
+        .text__information-cover{
+            width: 100%;
+        }
+    }
+
+    .media__cover{
+        display: none;
+    }
+
+    .banner{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #icon_notes{
+        display: none;
+    }
+
+    #icon_location{
+        left: 0;
+    }
+
+    .banner__text{
+        width: 100%;
+        margin-top: -100px;
+    }
+}
+</css>
